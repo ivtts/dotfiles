@@ -1,10 +1,21 @@
 set nocompatible
 
 syntax on
-colorscheme default
+colorscheme lucius
+"LuciusDark
+"LuciusDarkHighContrast
+"LuciusDarkLowContrast
+"LuciusBlack
+"LuciusBlackHighContrast
+"LuciusBlackLowContrast
+"LuciusLight
+"LuciusLightLowContrast
+"LuciusWhite
+"LuciusWhiteLowContrast
 
-filetype on
-filetype plugin on
+
+"filetype on
+"filetype plugin on
 filetype plugin indent on
 
 set tabstop=4
@@ -13,6 +24,7 @@ set smarttab
 set expandtab
 set softtabstop=4
 set autoindent
+set number
 
 let python_highlight_all = 1
 set t_Co=256
@@ -28,7 +40,7 @@ Plugin 'gmarik/Vundle.vim'		" let Vundle manage Vundle, required
 
 "---------=== Code/project navigation ===-------------
 Plugin 'scrooloose/nerdtree' 	    	" Project and file navigation
-Plugin 'scrooloose/nerdcommenter' 	" AutoComment
+"Plugin 'scrooloose/nerdcommenter' 	" AutoComment
 Plugin 'majutsushi/tagbar'          	" Class/module browser
 
 "------------------=== Other ===----------------------
@@ -36,6 +48,7 @@ Plugin 'bling/vim-airline'   	    	" Lean & mean status/tabline for vim
 "Plugin 'fisadev/FixedTaskList.vim'  	" Pending tasks list
 Plugin 'rosenfeld/conque-term'      	" Consoles as buffers
 "Plugin 'tpope/vim-surround'	   	" Parentheses, brackets, quotes, XML tags, and more
+Plugin 'jonathanfilip/lucius'
 
 "--------------=== Snippets support ===---------------
 "Plugin 'garbas/vim-snipmate'		" Snippets manager
@@ -52,9 +65,30 @@ Plugin 'klen/python-mode'	        " Python mode (docs, refactor, lints, highligh
 
 call vundle#end()            		" required
 
-" NerdTree настройки
+" указываем каталог с настройками SnipMate
+"let g:snippets_dir = "~/.vim/vim-snippets/snippets"
+
+"let g:pymode_python = 'python3'
+
+" настройки Vim-Airline
+set laststatus=2
+"let g:airline_theme='badwolf'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+
+" TaskList настройки
+"map <F2> :TaskList<CR> 	   " отобразить список тасков на F2
+
 " показать NERDTree на F3
 map <F3> :NERDTreeToggle<CR>
+" NerdTree настройки
+"игноррируемые файлы с расширениями
+let NERDTreeIgnore=['\~$', '\.pyc$', '\.pyo$', '\.class$', 'pip-log\.txt$', '\.o$']  
+
+map <F4> :TagbarToggle<CR>
+" TagBar настройки
+let g:tagbar_autofocus = 0 " автофокус на Tagbar при открытии
 
 " ConqueTerm
 " запуск интерпретатора на F5
