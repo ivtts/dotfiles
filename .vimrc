@@ -1,7 +1,8 @@
 set nocompatible
 
 syntax on
-colorscheme lucius
+colorscheme elflord
+"colorscheme lucius
 "LuciusDark
 "LuciusDarkHighContrast
 "LuciusDarkLowContrast
@@ -33,7 +34,8 @@ set t_Co=256
 " Vundle settings
 "=====================================================
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/vundle
+"set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'		" let Vundle manage Vundle, required
