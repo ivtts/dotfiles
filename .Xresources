@@ -1,12 +1,11 @@
-URxvt.geometry: 80x40
-URxvt.perl-ext: tabbed
+!URxvt.geometry: 80x40
+URxvt.perl-ext: tabbed,selection-to-clipboard
 
-!=== ВИЗУАЛЬНЫЕ НАСТРОЙКИ ===
 ! Настройки цветовой схемы
-!URxvt*background: #181818
-!URxvt*foreground: #E8e8e8
-URxvt*foreground: white
-URxvt*background: black
+URxvt*background: #000000
+URxvt*foreground: #E8e8e8
+!URxvt*foreground: white
+!URxvt*background: black
 URxvt.color0:     rgb:00/00/00
 URxvt.color1:     rgb:e0/10/10
 URxvt.color2:     rgb:20/ad/20
@@ -25,13 +24,16 @@ URxvt.color14:    rgb:1c/f5/f5
 URxvt.color15:    rgb:ff/ff/ff
 
 ! Настройки шрифтов
-URxvt.font:            xft:Terminus:size=14:autohint=false:antialias=true:hinting=true:style=regular
-URxvt.boldFont:        xft:Terminus:size=14:autohint=true:antialias=true:hinting=true:style=regular
+!URxvt.font:		-xos4-terminus-medium-r-normal-*-18-*-*-*-*-*-*-*
+!URxvt.boldFont:	-xos4-terminus-medium-r-normal-*-18-*-*-*-*-*-*-*
+URxvt.font:		-xos4-terminus-medium-r-normal--18-180-72-72-c-100-iso10646-1
+URxvt.boldFont:		-xos4-terminus-medium-r-normal--18-180-72-72-c-100-iso10646-1
+!URxvt.font:            xft:Terminus:size=14:autohint=false:antialias=true:hinting=true:style=regular
+!URxvt.boldFont:        xft:Terminus:size=14:autohint=true:antialias=true:hinting=true:style=regular
+!URxvt.italicFont:      xft:Terminus:italic:size=14:autohint=true:style=regular
+!URxvt.boldItalicFont:  xft:Terminus:italic:size=14:autohint=true:style=regular
 
-URxvt.italicFont:      xft:Terminus:italic:size=14:autohint=true:style=regular
-URxvt.boldItalicFont:  xft:Terminus:italic:size=14:autohint=true:style=regular
-
-URxvt.letterSpace: -1
+URxvt.letterSpace: 0
 
 URxvt.tabbed.tabbar-fg: 15
 URxvt.tabbed.tabbar-bg: 8

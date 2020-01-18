@@ -88,10 +88,18 @@ fi
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -l'
+alias ll='ls -lh'
 alias la='ls -A'
 alias l='ls -CF'
 alias rde='rdesktop -k en-us -f -a 16'
+alias rdeb='rdesktop -k en-us -f -a 16 -d domofon -u ivan -r disk:floppy=/home/ivan -r clipboard:PRIMARYCLIPBOARD'
+alias z=zathura
+alias wine32='WINEARCH=win32 WINEPREFIX=~/.wine32 wine'
+alias wine64='WINEARCH=win64 WINEPREFIX=~/.wine wine64'
+alias expacq='expac -Qs -HM "%n - %d %m"'
+alias expacs='expac -Ss -HM "%n - %d %k"'
+alias vi=vim
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -113,3 +121,6 @@ if ! shopt -oq posix; then
 fi
 
 PATH="$PATH:/sbin:/usr/sbin"
+export WINEARCH=win32
+export WINEPREFIX=/home/ivan/.wine32
+export FCEDIT=vim
