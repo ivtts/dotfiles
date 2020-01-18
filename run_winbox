@@ -1,2 +1,0 @@
-#/bin/sh
-WINEARCH=win32 WINEPREFIX=~/win32 ~/win32/drive_c/portable/winbox.exe 
