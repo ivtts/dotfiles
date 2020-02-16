@@ -37,11 +37,14 @@ call neobundle#end()
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 
-colorscheme desert
+colorscheme wombat256mod
+filetype plugin on
+"set omnifunc=syntaxcomplete#Complete
 syntax on
 
 set autoindent
 set foldmethod=indent
+set foldopen=all
 set history=200
 set hlsearch
 set incsearch
@@ -49,4 +52,12 @@ set nocompatible
 set number
 set shiftwidth=4
 set smartindent
+set softtabstop=4
 set tabstop=4
+
+imap [ []<LEFT>
+imap ( ()<LEFT>
+imap { {}<LEFT>
+inoremap <C-space> <C-x><C-o>
+noremap <F5> :w !python2<CR>
+inoremap <F5> <ESC>:w !python2<CR>
