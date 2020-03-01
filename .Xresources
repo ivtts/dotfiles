@@ -40,9 +40,10 @@ URxvt.tabbed.tabbar-bg: 8
 URxvt.tabbed.tab-fg:    8
 URxvt.tabbed.tab-bg:    14
 
-URxvt.scrollBar:        True
-URxvt.scrollBar_right:  True
-URxvt.scrollstyle:      plain
+URxvt.scrollBar:        False
+!URxvt.scrollBar_right:  True
+!URxvt.scrollstyle:      plain
+URxvt.geometry:	132x43
 
 URxvt.savelines:	5000
 URxvt.jumpScroll: 	True
