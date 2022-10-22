@@ -88,17 +88,22 @@ fi
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -lh'
-alias la='ls -A'
-alias l='ls -CF'
-alias rde='rdesktop -k en-us -f -a 16'
-alias rdeb='rdesktop -k en-us -f -a 16 -d domofon -u ivan -r disk:floppy=/home/ivan -r clipboard:PRIMARYCLIPBOARD'
-alias z=zathura
-alias wine32='WINEARCH=win32 WINEPREFIX=~/.wine32 wine'
-alias wine64='WINEARCH=win64 WINEPREFIX=~/.wine wine64'
+alias b44='sudo systemctl start openvpn-client@client-b44'
+alias camftp='curlftpfs ftp://192.168.8.1 /home/ivan/Documents/cam -o ro'
 alias expacq='expac -Qs -HM "%n - %d %m"'
 alias expacs='expac -Ss -HM "%n - %d %k"'
+alias isql-fb3='pushd /home/ivan/downloads/soft/firebird/Firebird-3.0.5.33220-0.amd64/opt/firebird/bin;LD_LIBRARY_PATH=. ./isql -u sysdba -p masterkey'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -lh'
+alias rde='rdesktop -k en-us -f -a 16'
+alias rdeb='rdesktop -k en-us -f -a 16 -d domofon -u ivan -r disk:floppy=/home/ivan -r clipboard:PRIMARYCLIPBOARD'
 alias vi=vim
+alias wine32='WINEARCH=win32 WINEPREFIX=~/.wine32 wine'
+alias wine64='WINEARCH=win64 WINEPREFIX=~/.wine wine64'
+alias xf5='xf /v:192.168.105.5'
+alias xf='xfreerdp -aero +auto-reconnect +bitmap-cache +clipboard /d:domofon -decorations +home-drive -encryption /f /floatbar:sticky:off,default:hidden,show:fullscreen -fonts -wallpaper -themes'
+alias z=zathura
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
